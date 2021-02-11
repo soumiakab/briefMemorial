@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>memorial books</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+         <style type="text/css">
+
+.contimg{
+       display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .img{
+
+      box-shadow: 0px 14px 18px 0 rgba(255, 155, 186, 0.97),0px 17px 50px 0 rgba(188, 165, 255, 0.97);
+      padding: 0px;
+      margin: 50px;
+      width: 300px;
+      height:350px;
+      overflow: hidden;
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+       }
+    .img img {
+          
+        width: 100%;
+        height: 100%;
+     }
+  .slid{
+     opacity: 0;
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 10%;
+     height: 90%;
+     background: #FFF;
+     color: #151E3F;
+      transition: all 0.9s ease;
+      cursor: pointer;
+  }
+  .slid p {
+      transition: all 0.9s ease;
+      transform: scale(0.1);
+      text-align: center;
+      color: #000;
+  }
+  .img:hover .slid {
+    opacity: 0.8;
+     width: 90%;
+     transition: all 0.5s ease;
+ 
+}
+ .img:hover .slid p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+  h3{
+    text-align: center;
+    color:  #b32137;
+    font-size: 35px;
+  }
+  h3:hover{
+    color: black;
+    font-size:  50px;
+    cursor: pointer;
+
+  }
+  @media (max-width: 900px){
+    .contimg{
+        display: flex;
+        justify-content: row;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    .img{
+      width: 200px;
+      height:300px;
+      padding: 0px;
+
+       }
+    .img img {
+       width: 100%;
+      height:100%;
+
+     }
+  .slid{
+    opacity: 0;
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 10%;
+     height: 90%;
+     background: #FFF;
+     color: #151E3F;
+      transition: all 0.9s ease;
+      cursor: pointer;
+  }
+  
+  .img:hover .slid {
+      opacity: 0.8;
+     width: 90%;
+     transition: all 0.5s ease;
+ 
+}
+ .img:hover .slid p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+  h3{
+    text-align: center;
+    color:  #b32137;
+    font-size: 25px;
+  }
+  h3:hover{
+    color: black;
+    font-size:  30px;
+    cursor: pointer;
+
+  }
+
+  }
+   </style>
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="#"></a> </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <div class="menu-area">
+                        <div class="limit-box">
+                           <nav class="main-menu">
+                              <ul class="menu-area-main">
+                                 <li > <a href="index.html">Home</a> </li>
+                                 <li> <a href="about.html">About us</a> </li>
+                                 <li><a href="books.html">Our Books</a></li>
+                                 <li><a href="library.html">library</a></li>
+                                 <li> <a href="FEVENT.html">Event</a> </li>
+                                 <li class="active"> <a href="FGALLERY_.html">Gallery</a> </li>
+                                 <li><a href="contact.html">Contact us</a></li>
+                                 <li class="mean-last"> <a href="#"><img src="images/search_icon.png" alt="#" /></a> </li>
+                                 <li class="mean-last"> <a href="#"><img src="images/top-icon.png" alt="#" /></a> </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <!-- end header inner -->
+      </header>
+      <!-- end header -->
+      <!-- event -->
+           <div class="about-bg">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="abouttitle">
+                     <h2>GALLERY</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!----- debutt----->
+    
+<h3><u>Classic Books</u></h3>
+<div class="contimg">
+    <div class="img">
+        <div class="slid">
+           <p>Title:<b>The divine poems</b><br>Aurther:<b>John Donne, John Booty, P.G. Stanwood</b><br><a href="https://openlibrary.org/works/OL15420303W/John_Donne_Poetry">READ</a></p>
+        </div>
+        <img src="images/B1.jpg" alt="" />
+      </div>
+          <div class="img">
+        <div class="slid">
+           <p>Title:<b>Insectivorous plants</b><br>Aurther:<b> Charles Darwin</b><br><a href="https://openlibrary.org/works/OL515357W/Insectivorous_plants">READ</a></p>
+        </div>
+        <img src="images/B2.jpg" alt="" />
+      </div>
+
+      <div class="img">
+        <div class="slid">
+           <p>Title:<b>The awakening of spring</b><br>Aurther :<b>Frank Wedekind</b><br><a href="https://openlibrary.org/works/OL1327807W/Spring%27s_Awakening">READ</a></p>
+        </div>
+        <img src="images/B3.jpg" alt="" />
+      </div>
+      <div class="img">
+        <div class="slid">
+           <p>Title:<b>The exploits of Brigadier Gerard</b><br>Aurther:<b> Arthur Conan Doyle</b><br><a href="https://archive.org/stream/exploitsofbrigad00doylrich?ref=ol">READ</a></p>
+        </div>
+        <img src="images/B4.jpg" alt="" />
+      </div>
+</div>
+
+
+<h3><u>Recently Returned</u></h3>
+<div class="contimg">
+    <div class="img">
+        <div class="slid">
+           <p>Title:<b>Medieval song</b><br>Aurther<b>:James J. Wilhelm</b><br><a href="https://openlibrary.org/books/OL4424220M/Medieval_song">READ</a></p>
+        </div>
+        <img src="images/B5.jpg" alt="" />
+      </div>
+
+        <div class="img">
+        <div class="slid">
+           <p>Title:<b>X Syntax</b><br><b>Aurther/Ray S. Jackendoff</b><br><a href="https://openlibrary.org/books/OL10238250M/X_Syntax">READ</a></p>
+        </div>
+        <img src="images/B6.jpg" alt="" />
+      </div>
+
+      <div class="img">
+        <div class="slid">
+           <p>Title:<b>International encyclopedia of communications</b><br>Aurther:<b>George Gerbner</b><br><a href="https://openlibrary.org/books/OL2041464M/International_encyclopedia_of_communications">READ</a></p>
+        </div>
+        <img src="images/B7.jpg" alt="" />
+      </div>
+
+      <div class="img">
+        <div class="slid">
+           <p>Title:<b>The Golden Cage</b><br>Aurther:<b>Hilde Bruch</b><br><a href="https://openlibrary.org/books/OL15501024M/The_Golden_Cage">READ</a></p>
+        </div>
+        <img src="images/B8.jpg" alt="" />
+      </div>
+</div>
+
+
+
+<h3><u>Thrillers</u></h3>
+<div class="contimg">
+    <div class="img">
+        <div class="slid">
+           <p>Title:<b>IT</b><br>Aurther: <b>Stephen King</b><br><a href="https://openlibrary.org/books/OL24229110M/IT">READ</a></p>
+        </div>
+        <img src="images/B9.jpg" alt="" />
+      </div>
+
+      <div class="img">
+        <div class="slid">
+           <p>Title:<b>The bazaar of bad dreams</b><br>Aurther:<b>Stephen King</b><br><a href="https://openlibrary.org/books/OL26412312M/The_bazaar_of_bad_dreams">READ</a></p>
+        </div>
+        <img src="images/B10.jpg" alt="" />
+      </div>
+
+      <div class="img">
+        <div class="slid">
+           <p>Title:<b>Red Storm Rising</b><br>Aurther:<b>Tom Clancy</b><br><a href="https://openlibrary.org/books/OL2716383M/Red_Storm_Rising">READ</a></p>
+        </div>
+        <img src="images/B11.jpg" alt="" />
+      </div>
+
+      <div class="img">
+        <div class="slid">
+           <p>Title:<b>Eyes of Darkness</b><br>Aurther:<b>Dean Koontz</b><br><a href="https://openlibrary.org/books/OL7503861M/Eyes_of_Darkness">READ</a></p>
+        </div>
+        <img src="images/B12.jpg" alt="" />
+      </div>
+</div>
+
+<h3><u>KIDS</u></h3>
+<div class="contimg">
+    <div class="img">
+        <div class="slid">
+           <p>Title:<b>Miss Bindergarten celebrates the last day of kindergarten</b><br>Aurther: <b>Joseph Slate</b><br><a href="https://openlibrary.org/books/OL3396890M/Miss_Bindergarten_celebrates_the_last_day_of_kindergarten"></a></p>
+        </div>
+        <img src="images/B13.jpg" alt="" />
+      </div>
+
+      <div class="img">
+        <div class="slid">
+           <p>Title:<b>Ten in the Bed</b><br>Aurther: <b>Cabrera Jane</b><br><a href="https://openlibrary.org/books/OL8119543M/Ten_in_the_Bed">READ</a></p>
+        </div>
+        <img src="images/B14.jpg" alt="" />
+      </div>
+
+      <div class="img">
+        <div class="slid">
+           <p>Title:<b>The Conch Bearer (Brotherhood of the Conch)</b><br>Aurther: <b>Chitra Banerjee Divakaruni</b><br><a href="https://openlibrary.org/books/OL7730984M/The_Conch_Bearer_%28Brotherhood_of_the_Conch%29">READ</a></p>
+        </div>
+        <img src="images/B15.jpg" alt="" />
+      </div>
+           <div class="img">
+        <div class="slid">
+           <p>Title:<b>THug machine</b><br>Aurther: <b>Scott Campbell</b><br><a href="https://openlibrary.org/books/OL15501024M/The_Golden_Cage">READ</a></p>
+        </div>
+        <img src="images/B16.jpg" alt="" />
+      </div>
+
+     
+</div>   
+
+
+      <!-- end event -->
+      <!-- footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row pdn-top-30">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                     <div class="Follow">
+                        <h3>Follow Us</h3>
+                     </div>
+                     <ul class="location_icon">
+                        <li> <a href="#"><img src="icon/facebook.png"></a></li>
+                        <li> <a href="#"><img src="icon/Twitter.png"></a></li>
+                        <li> <a href="#"><img src="icon/linkedin.png"></a></li>
+                        <li> <a href="#"><img src="icon/instagram.png"></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                     <div class="Follow">
+                        <h3>Newsletter</h3>
+                     </div>
+                     <input class="Newsletter" placeholder="Enter your email" type="Enter your email">
+                     <button class="Subscribe">Subscribe</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>

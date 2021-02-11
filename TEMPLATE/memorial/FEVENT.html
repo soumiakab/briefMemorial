@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>memorial books</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+         <style type="text/css">
+
+   .bar{
+         color: #FFF;
+          background-color: #b32137;
+          height: 30%;
+          padding: 2%;
+          display: inline-block;
+          text-align: center;
+          font-weight: bold;
+          font-size: 25px;
+          width: 100%;
+    }
+.head{
+  display: block;
+  text-align: center;
+}
+
+.eventpar{
+  text-align: center;
+  margin: 10%;
+  margin-top: 0%;
+  padding: 2%;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  display: inline-block;
+}
+
+.main-nav {
+  position: relative;
+  top: 100%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  width: 600px;
+  height: 150px;
+  display: flex;
+}
+
+.main-nav li {
+  list-style: none;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+  transition: 0.5s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-nav li:hover {
+  opacity: 1;
+  transform: rotate(0deg);
+  width: 400px;
+  height: 200px;
+  z-index: 1;
+}
+
+
+.main-nav li .bg {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+}
+
+.main-nav li.item1 .bg {
+  background: url('images/evp1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.main-nav li.item2 .bg {
+  background: url('images/evp2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.main-nav li.item3 .bg {
+  background: url('images/evp3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.main-nav li.item4 .bg {
+  background: url('images/evp4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.main-nav li.item5 .bg {
+  background: url('images/evp5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.m{
+  margin: 20px;
+  padding: 20px;
+}
+.listedate{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  margin: 1%;
+
+}
+ 
+.listedate li{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  background-color: #fad9d7;
+  margin-bottom: 1%;
+  padding: 1%;
+  margin-right: 1%;
+  font-weight: bold;
+  color: #ad1b10;
+
+}
+.listedate li:hover{
+background-color: #ad1b10;
+padding: 2%;
+font-weight: bold;
+color: #fff;
+cursor: pointer;
+
+}
+.listedate li span{
+  font-weight: bold;
+  width: 50%;
+
+}
+.listedate li .right{
+  text-align: right;
+  color: #000;
+}
+.spn{
+  margin: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+.nove{
+   display: flex;
+   flex-direction: row;
+   margin: 2%;
+   color: #b32137;
+}
+.nove img{
+   display: flex;
+   border-radius: 50%;
+   width: 100%; 
+   height: auto;
+}
+.nove h2{
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+.artcont{
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+}
+.artcont p{
+text-align: center;
+margin: 10%;
+}
+.artcont button{
+   color: #fff;
+   background-color: #000;
+   border-radius: 10px;
+   padding: 2%;
+   font-weight: bold;
+}
+.artcont button:hover{
+   color: #b32137;
+   background-color: #fff;
+   border-radius: 5px;
+   padding: 2%;
+   font-weight: bold;
+   border: 2px solid #b32137;
+}
+@media (max-width: 900px){
+   .m{
+   display: none;
+}
+   .nove{
+   display: flex;
+   flex-direction: column;
+   margin: 2%;
+   color: #b32137;
+}
+
+}
+
+   </style>
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+<header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="#"></a> </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <div class="menu-area">
+                        <div class="limit-box">
+                           <nav class="main-menu">
+                              <ul class="menu-area-main">
+                                 <li > <a href="index.html">Home</a> </li>
+                                 <li> <a href="about.html">About us</a> </li>
+                                 <li><a href="books.html">Our Books</a></li>
+                                 <li><a href="library.html">library</a></li>
+                                 <li class="active"> <a href="FEVENT.html">Event</a> </li>
+                                 <li> <a href="FGALLERY_.html">Gallery</a> </li>
+                                 <li><a href="contact.html">Contact us</a></li>
+                                 <li class="mean-last"> <a href="#"><img src="images/search_icon.png" alt="#" /></a> </li>
+                                 <li class="mean-last"> <a href="#"><img src="images/top-icon.png" alt="#" /></a> </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <!-- end header inner -->
+      </header>
+      <!-- end header -->
+      <!-- event -->
+           <div class="about-bg">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="abouttitle">
+                     <h2>EVENT</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!----- debutt----->
+<div class="head">
+  <img src="images/eventimg.png">
+<h2 style="color: #ad1b10;">International Exhibition of Book & Publishing</h2></div>
+<p class="eventpar">The Casablanca International Book Fair is a book fair held annually at the International Fair in Casablanca, Morocco. This exhibition is considered one of the largest cultural festivals in the Kingdom of Morocco, and it is held in February every year for ten days in the economic capital, under the auspices of King Mohammed VI, under the supervision of the Ministry of Culture, Youth and Sports, and organized in cooperation with the Moroccan Agency for the Development of Investments and Exports and the Exhibition Office.
+
+The exhibition area is more than 20,000 square meters, which makes it one of the most important cultural gatherings that bring together various cultural actors with their various intellectual and literary orientations, including authors, painters, publishers and artists, in addition to visitors to the exhibition of different groups and ages.</p>
+
+<div class="m">
+<ul class="main-nav">
+  <li class="item1">
+    <div class="bg"></div>
+  </li>
+  <li class="item2">
+    <div class="bg"></div>
+  </li>
+  <li class="item3">
+    <div class="bg"></div>
+  </li>
+  <li class="item4">
+    <div class="bg"></div>
+  </li>
+  <li class="item5">
+    <div class="bg"></div>
+  </li>
+</ul>
+</div>
+<p class="eventpar">International Exhibition of Publishing and Books, SIEL is a unique platform which will facilitate the display of latest trends and innovations of Book Publishing. It is characterized as an entrusted place for Printing & Publishing sector.
+</p><br>
+<div class="bar">Program</div>
+<ul class="listedate">
+  <li><span>Timings</span><span class="right">09:00 AM-06:00 PM (expected)</span></li>
+
+  <li><span>Entry Fees</span><span class="right">Check Official Website</span></li>
+
+  <li><span>Participants</span><span class="right">520000 Visitors     100 - 500 Exhibitors / Based on previous editions</span></li>
+
+  <li><span>Category & Type Trade Show</span><span class="right">Education & Training</span></li>
+
+  <li><span>Editions</span><span class="right">06 - 16 Feb 2020 07 - 17 Feb 2019 25th Edition</span></li>
+
+</ul>
+
+<div><br></div>
+<div class="bar">Novelties</div>
+<div class="nove">
+<img  src="images/nv.jpg" alt="nv">
+<div class="artcont">
+<h2>Almost half a million people visited the Casablanca Book Fair
+</h2>
+<p>Mr. Al-Hassan Abababaa during a press conference devoted to reviewing the outcome of the 26th session of the International Publishing and Book Fair: Nearly half a million people visited the Book Fair in Casablanca The Minister of Culture, Youth and Sports, the official spokesperson for the government, Mr. Al-Hassan Abababa, said today, Sunday in Casablanca, that the 26th session of the exhibition International Publishing ...</p>
+<button>MORE</button></div>
+</div>
+<div class="bar">
+<ul >
+                           <li> <a href="#"><img src="icon/facebook.png"></a></li>
+                           <li> <a href="#"><img src="icon/Twitter.png"></a></li>
+                           <li> <a href="#"><img src="icon/linkedin.png"></a></li>
+                           <li> <a href="#"><img src="icon/instagram.png"></a></li>
+                        </ul>
+</div><br>
+
+<ul class="spn">
+  <li><img src="images/p1.jpg"></li>
+  <li><img src="images/p2.jpg"></li>
+  <li><img src="images/p3.jpg"></li>
+  <li><img src="images/p4.jpg"></li>
+  <li><img src="images/p5.jpg"></li>
+  <li><img src="images/p6.jpg"></li>
+</ul>
+<!----- fin----->
+
+
+    
+      <!-- end event -->
+      <!-- footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row pdn-top-30">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                     <div class="Follow">
+                        <h3>Follow Us</h3>
+                     </div>
+                     <ul class="location_icon">
+                        <li> <a href="#"><img src="icon/facebook.png"></a></li>
+                        <li> <a href="#"><img src="icon/Twitter.png"></a></li>
+                        <li> <a href="#"><img src="icon/linkedin.png"></a></li>
+                        <li> <a href="#"><img src="icon/instagram.png"></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                     <div class="Follow">
+                        <h3>Newsletter</h3>
+                     </div>
+                     <input class="Newsletter" placeholder="Enter your email" type="Enter your email">
+                     <button class="Subscribe">Subscribe</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
